@@ -1,0 +1,126 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    @apply scroll-smooth;
+  }
+  :root {
+    --background: 240 10% 3.9%;
+    --foreground: 210 40% 98%;
+
+    --card: 224 71% 4%;
+    --card-foreground: 210 40% 98%;
+
+    --popover: 240 6% 10%;
+    --popover-foreground: 210 40% 98%;
+
+    --primary: 336 80% 56%;
+    --primary-foreground: 336 100% 98%;
+
+    --secondary: 240 5% 34%;
+    --secondary-foreground: 210 40% 98%;
+
+    --muted: 240 5% 34%;
+    --muted-foreground: 240 4% 65%;
+
+    --accent: 258 79% 56%;
+    --accent-foreground: 258 100% 95%;
+
+    --destructive: 0 63% 31%;
+    --destructive-foreground: 0 0% 98%;
+
+    --border: 240 4% 16%;
+    --input: 240 4% 16%;
+    --ring: 336 80% 56%;
+
+    --radius: 0.5rem;
+
+    --chart-1: 158 79% 44%;
+    --chart-2: 336 80% 56%;
+    --chart-3: 258 79% 56%;
+    --chart-4: 48 96% 50%;
+    --chart-5: 24 9.8% 10%;
+  }
+
+  .dark {
+    --background: 240 10% 3.9%;
+    --foreground: 210 40% 98%;
+
+    --card: 224 71% 4%;
+    --card-foreground: 210 40% 98%;
+
+    --popover: 240 6% 10%;
+    --popover-foreground: 210 40% 98%;
+
+    --primary: 336 80% 56%;
+    --primary-foreground: 336 100% 98%;
+
+    --secondary: 240 5% 34%;
+    --secondary-foreground: 210 40% 98%;
+
+    --muted: 240 5% 34%;
+    --muted-foreground: 240 4% 65%;
+
+    --accent: 258 79% 56%;
+    --accent-foreground: 258 100% 95%;
+
+    --destructive: 0 63% 31%;
+    --destructive-foreground: 0 0% 98%;
+
+    --border: 240 4% 16%;
+    --input: 240 4% 16%;
+    --ring: 336 80% 56%;
+
+    --chart-1: 158 79% 44%;
+    --chart-2: 336 80% 56%;
+    --chart-3: 258 79% 56%;
+    --chart-4: 48 96% 50%;
+    --chart-5: 24 9.8% 10%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground antialiased selection:bg-emerald-400/20 selection:text-emerald-200;
+  }
+}
+
+@keyframes slideUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes float {
+  0% {
+    transform: translateY(0px);
+    box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);
+  }
+  50% {
+    transform: translateY(-10px);
+    box-shadow: 0 25px 15px 0px rgba(0,0,0,0.2);
+  }
+  100% {
+    transform: translateY(0px);
+    box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);
+  }
+}

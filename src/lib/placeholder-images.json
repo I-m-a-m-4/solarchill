@@ -1,0 +1,53 @@
+
+{
+  "placeholderImages": [
+    {
+      "id": "about",
+      "description": "People using the cold box.",
+      "imageUrl": "/cold1.png",
+      "imageHint": "community refrigerator"
+    },
+    {
+      "id": "features",
+      "description": "Cold box with assorted food items.",
+      "imageUrl": "https://picsum.photos/seed/features/500/500",
+      "imageHint": "refrigerator food"
+    },
+    {
+      "id": "slideshow1",
+      "description": "A close-up of the SolarChill cold box in a sunny field.",
+      "imageUrl": "https://picsum.photos/seed/slideshow1/1600/900",
+      "imageHint": "solar panel"
+    },
+    {
+      "id": "slideshow2",
+      "description": "A group of farmers smiling around the cold box.",
+      "imageUrl": "https://picsum.photos/seed/slideshow2/1600/900",
+      "imageHint": "happy farmers"
+    },
+    {
+      "id": "slideshow3",
+      "description": "Fresh produce being stored inside the cold box.",
+      "imageUrl": "https://picsum.photos/seed/slideshow3/1600/900",
+      "imageHint": "fresh vegetables"
+    },
+    {
+      "id": "hero-image1",
+      "description": "A solar powered cold box in a rural village.",
+      "imageUrl": "/cold1.png",
+      "imageHint": "solar refrigerator"
+    },
+    {
+      "id": "hero-image2",
+      "description": "A woman taking fresh vegetables from a solar powered cold box.",
+      "imageUrl": "/cold2.png",
+      "imageHint": "fresh food"
+    },
+    {
+      "id": "hero-image3",
+      "description": "A clinic using a solar powered cold box for vaccines.",
+      "imageUrl": "/cold3.png",
+      "imageHint": "medical supplies"
+    }
+  ]
+}
