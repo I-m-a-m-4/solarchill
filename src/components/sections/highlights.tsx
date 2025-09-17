@@ -47,7 +47,7 @@ export function Highlights() {
               return (
                 <CarouselItem key={index}>
                   <Card className="overflow-hidden border-none bg-transparent">
-                    <CardContent className="relative aspect-[16/9] w-full p-0">
+                    <CardContent className="relative aspect-video w-full p-0">
                       {image && (
                          <Image
                           src={image.imageUrl}
@@ -57,11 +57,11 @@ export function Highlights() {
                           data-ai-hint={image.imageHint}
                         />
                       )}
-                      <div className="absolute inset-0 flex flex-col items-center justify-center text-center text-white p-8 bg-black/40">
-                        <h3 className="font-headline text-3xl md:text-5xl font-bold">
+                      <div className="absolute inset-0 flex flex-col items-center justify-center text-center text-white p-4 sm:p-8 bg-black/40">
+                        <h3 className="font-headline text-3xl sm:text-4xl md:text-6xl font-bold">
                           {highlight.title}
                         </h3>
-                        <p className="mt-4 max-w-2xl text-lg text-white/90">
+                        <p className="mt-4 max-w-3xl text-lg sm:text-xl text-white/90">
                           {highlight.description}
                         </p>
                       </div>
@@ -71,8 +71,8 @@ export function Highlights() {
               );
             })}
           </CarouselContent>
-          <CarouselPrevious className="absolute left-4 top-1/2 -translate-y-1/2" />
-          <CarouselNext className="absolute right-4 top-1/2 -translate-y-1/2" />
+          <CarouselPrevious className="absolute left-2 top-1/2 -translate-y-1/2 text-white" />
+          <CarouselNext className="absolute right-2 top-1/2 -translate-y-1/2 text-white" />
         </Carousel>
       </div>
     </section>

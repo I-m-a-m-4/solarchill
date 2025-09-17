@@ -1,19 +1,30 @@
 "use client"
 
-import { Bar, BarChart, CartesianGrid, ResponsiveContainer, Tooltip, XAxis, YAxis } from "recharts"
+import { Bar, BarChart, CartesianGrid, ResponsiveContainer, Tooltip, XAxis, YAxis, Cell } from "recharts"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { ChartContainer, ChartTooltipContent, type ChartConfig } from "@/components/ui/chart"
 
 const impactData = [
-  { name: 'Safe Storage', value: 85, fill: "hsl(var(--primary))" },
-  { name: 'Reduced Spoilage', value: 60, fill: "hsl(var(--primary))" },
-  { name: 'Lower CO2', value: 75, fill: "hsl(var(--primary))" },
+  { name: 'Safe Storage', value: 85, fill: "hsl(var(--chart-1))" },
+  { name: 'Reduced Spoilage', value: 60, fill: "hsl(var(--chart-2))" },
+  { name: 'Lower CO2', value: 75, fill: "hsl(var(--chart-3))" },
 ]
 
 const chartConfig = {
   value: {
     label: "%",
-    color: "hsl(var(--primary))",
+  },
+  'Safe Storage': {
+    label: 'Safe Storage',
+    color: 'hsl(var(--chart-1))',
+  },
+  'Reduced Spoilage': {
+    label: 'Reduced Spoilage',
+    color: 'hsl(var(--chart-2))',
+  },
+  'Lower CO2': {
+    label: 'Lower CO2',
+    color: 'hsl(var(--chart-3))',
   },
 } satisfies ChartConfig;
 
@@ -44,7 +55,11 @@ export function ImpactMetrics() {
                     cursor={{ fill: 'hsl(var(--muted))' }}
                     content={<ChartTooltipContent indicator="dot" />}
                   />
-                  <Bar dataKey="value" radius={[4, 4, 0, 0]} />
+                  <Bar dataKey="value" radius={[4, 4, 0, 0]}>
+                    {impactData.map((entry) => (
+                      <Cell key={entry.name} fill={entry.fill} />
+                    ))}
+                  </Bar>
                 </BarChart>
               </ResponsiveContainer>
             </ChartContainer>

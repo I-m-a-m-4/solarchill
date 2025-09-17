@@ -90,8 +90,8 @@ export function Hero() {
               </CarouselItem>
             ))}
           </CarouselContent>
-          <CarouselPrevious className="absolute left-2 md:-left-12 top-1/2 -translate-y-1/2" />
-          <CarouselNext className="absolute right-2 md:-right-12 top-1/2 -translate-y-1/2" />
+          <CarouselPrevious className="absolute left-2 md:-left-12 top-1/2 -translate-y-1/2 text-white" />
+          <CarouselNext className="absolute right-2 md:-right-12 top-1/2 -translate-y-1/2 text-white" />
         </Carousel>
       </div>
     </section>
