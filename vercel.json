@@ -1,9 +1,8 @@
 {
-  "redirects": [
+  "builds": [
     {
-      "source": "/favicon.ico",
-      "destination": "/icon.png",
-      "permanent": true
+      "src": "next.config.ts",
+      "use": "@vercel/next"
     }
   ]
 }
