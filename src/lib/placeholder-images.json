@@ -10,7 +10,7 @@
     {
       "id": "features",
       "description": "Cold box with assorted food items.",
-      "imageUrl": "https://picsum.photos/seed/features/500/500",
+      "imageUrl": "/cold3.png",
       "imageHint": "refrigerator food"
     },
     {
